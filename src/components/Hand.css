@@ -1,0 +1,137 @@
+/* Hand container styles */
+
+.hand-container {
+  padding: 20px;
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  gap: -20px; /* Overlap cards slightly */
+  flex-wrap: nowrap;
+}
+
+/* Fan the cards out slightly */
+.hand .card {
+  margin: 0 -10px;
+  transition: transform 0.2s ease, margin-top 0.2s ease, z-index 0s;
+}
+
+.hand .card:hover {
+  z-index: 100;
+}
+
+/* Slight rotation for card fan effect */
+.hand .card:nth-child(1) { transform: rotate(-6deg); }
+.hand .card:nth-child(2) { transform: rotate(-4deg); }
+.hand .card:nth-child(3) { transform: rotate(-2deg); }
+.hand .card:nth-child(4) { transform: rotate(0deg); }
+.hand .card:nth-child(5) { transform: rotate(2deg); }
+.hand .card:nth-child(6) { transform: rotate(4deg); }
+.hand .card:nth-child(7) { transform: rotate(6deg); }
+.hand .card:nth-child(8) { transform: rotate(8deg); }
+
+.hand .card:hover {
+  transform: translateY(-15px) rotate(0deg) !important;
+}
+
+.hand .card.selected {
+  transform: translateY(-25px) rotate(0deg) !important;
+}
+
+.hand-empty {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  padding: 40px;
+}
+
+/* Play order reorder bar */
+.play-order-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.play-order-label {
+  color: #ffd700;
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.play-order-chips {
+  display: flex;
+  gap: 6px;
+}
+
+.play-order-chip {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: grab;
+  border: 2px solid #ffd700;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.play-order-chip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.play-order-chip:active {
+  cursor: grabbing;
+}
+
+.play-order-chip.drag-over {
+  border-color: #fff;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+.chip-order {
+  background: #ffd700;
+  color: #1a1a1a;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  margin-right: 2px;
+}
+
+.chip-rank {
+  font-size: 0.9rem;
+}
+
+.chip-suit {
+  font-size: 1rem;
+}
+
+.play-order-hint {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* Make hand container flex column to stack order bar below */
+.hand-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}

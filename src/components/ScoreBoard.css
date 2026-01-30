@@ -1,0 +1,172 @@
+/* Scoreboard Styles */
+
+.scoreboard {
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  min-width: 280px;
+}
+
+/* Header */
+.scoreboard-header {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.series-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.series-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.atbat-label {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Score display */
+.score-section {
+  margin-bottom: 15px;
+}
+
+.score-display {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.current-score {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a90d9;
+}
+
+.score-divider {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.target-score {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Score bar */
+.score-bar {
+  height: 12px;
+  background: #333;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #444;
+}
+
+.score-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4a90d9 0%, #67a9e8 100%);
+  border-radius: 6px;
+  transition: width 0.5s ease;
+  box-shadow: 0 0 10px rgba(74, 144, 217, 0.5);
+}
+
+/* Hand preview */
+.hand-preview {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.preview-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 4px;
+}
+
+.preview-hint {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.preview-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+
+.preview-x {
+  color: #888;
+}
+
+.preview-equals {
+  color: #888;
+  margin: 0 4px;
+}
+
+.preview-total {
+  font-weight: bold;
+  color: #4a90d9;
+  font-size: 1.3rem;
+}
+
+/* Resources */
+.resources {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+}
+
+.resource {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.resource-icon {
+  font-size: 1.5rem;
+}
+
+.resource-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.resource-label {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.resource.money .resource-value {
+  color: #ffd700;
+}
+
+/* Text colors (from index.css) */
+.text-chips {
+  color: #4a90d9;
+  font-weight: bold;
+}
+
+.text-mult {
+  color: #e85050;
+  font-weight: bold;
+}

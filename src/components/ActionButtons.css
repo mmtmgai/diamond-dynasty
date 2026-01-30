@@ -1,0 +1,74 @@
+/* Action Button Styles */
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.action-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  min-width: 140px;
+}
+
+.btn-play {
+  background: linear-gradient(180deg, #2d7d32 0%, #1b5e20 100%);
+  color: white;
+  border-color: #4caf50;
+}
+
+.btn-play:hover:not(:disabled) {
+  background: linear-gradient(180deg, #388e3c 0%, #2e7d32 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.btn-play:disabled {
+  background: #333;
+  border-color: #555;
+  color: #777;
+}
+
+.btn-discard {
+  background: linear-gradient(180deg, #d32f2f 0%, #b71c1c 100%);
+  color: white;
+  border-color: #f44336;
+}
+
+.btn-discard:hover:not(:disabled) {
+  background: linear-gradient(180deg, #e53935 0%, #c62828 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
+}
+
+.btn-discard:disabled {
+  background: #333;
+  border-color: #555;
+  color: #777;
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.btn-text {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-subtext {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 4px;
+  font-weight: normal;
+}

@@ -1,0 +1,119 @@
+/* Tooltip Styles */
+
+.tooltip-trigger {
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip {
+  position: fixed;
+  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  max-width: 280px;
+  min-width: 150px;
+  animation: tooltipFadeIn 0.15s ease;
+  pointer-events: none;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tooltip-title {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #444;
+}
+
+.tooltip-content {
+  color: #ddd;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Legend tooltip specifics */
+.legend-tooltip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.legend-tooltip-position {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.legend-tooltip-effect {
+  color: #4a90d9;
+  font-weight: 500;
+}
+
+.legend-tooltip-desc {
+  color: #777;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* Card tooltip specifics */
+.card-tooltip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-tooltip-value {
+  color: #ddd;
+}
+
+.card-tooltip-rank {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* Voucher tooltip specifics */
+.voucher-tooltip-content {
+  color: #dda0dd;
+}
+
+/* Text colors */
+.text-chips {
+  color: #4a90d9;
+  font-weight: bold;
+}
+
+.text-mult {
+  color: #e85050;
+  font-weight: bold;
+}
+
+/* Position variations (arrows could be added later) */
+.tooltip-top {
+  /* Default positioning */
+}
+
+.tooltip-bottom {
+  /* Default positioning */
+}
+
+.tooltip-left {
+  /* Default positioning */
+}
+
+.tooltip-right {
+  /* Default positioning */
+}
