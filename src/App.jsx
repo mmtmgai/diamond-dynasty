@@ -14,6 +14,7 @@ import { evaluateHand, calculateScore, generateScoringSteps } from './game/handE
 import soundManager from './audio/SoundManager.js';
 import { createDeck, shuffleDeck, RANK_VALUES } from './data/cards.js';
 import './App.css';
+import './mobile.css';
 
 // Suit order for sorting
 const SUIT_ORDER = { 'spades': 0, 'hearts': 1, 'clubs': 2, 'diamonds': 3 };
