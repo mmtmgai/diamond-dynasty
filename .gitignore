@@ -4,3 +4,5 @@ dist/
 dist-latest/
 dist-new/
 .env
+.vercel
+.env*.local
